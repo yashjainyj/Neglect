@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_marginStart="60dp"
+        android:textSize="20dp"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="message"
+        android:id="@+id/message_content"
+        android:textSize="15dp"
+        android:layout_below="@id/name"
+        android:layout_marginStart="60dp"/>
+</RelativeLayout>

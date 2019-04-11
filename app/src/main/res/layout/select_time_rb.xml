@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 Minute"
+            android:textAllCaps="false"
+            android:id="@+id/min30"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Hour"
+            android:textAllCaps="false"
+            android:id="@+id/hour1"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Hour"
+            android:textAllCaps="false"
+            android:id="@+id/hour2"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Hour"
+            android:textAllCaps="false"
+            android:id="@+id/hour3"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Hour"
+            android:textAllCaps="false"
+            android:id="@+id/hour4"
+            />
+
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login_Register.Login_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:id="@+id/toolbarlogin">
+    </android.support.v7.widget.Toolbar>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/toolbarlogin"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/logo"
+            android:src="@drawable/ic_launcher_background"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Email Address"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            android:id="@+id/emailtext"
+            android:textColor="@color/colorAccent"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/Email"
+            android:singleLine="true"
+            android:layout_below="@+id/emailtext"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/profile"/>
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Password"
+            android:layout_below="@+id/Email"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:id="@+id/passwordtext"
+            android:textColor="@color/colorAccent"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:paddingStart="20dp"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_below="@+id/passwordtext"
+            android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+            android:background="@drawable/profile"/>
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/round_button"
+            android:id="@+id/login"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User"
+            android:textColor="#E91E63"
+            android:layout_below="@+id/login"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:id="@+id/newusertext"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="Sign Up... "
+            android:layout_below="@+id/newusertext"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonblue"
+            android:id="@+id/register"/>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

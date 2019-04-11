@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Navigation_Items.Strict_mode"
+    tools:showIn="@layout/activity_strict_mode">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/strictmodedra">
+
+        <ImageView
+            android:id="@+id/imagel"
+            android:layout_marginTop="50dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/security" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strict Mode"
+            android:textSize="20dp"
+            android:id="@+id/strict"
+            android:layout_below="@id/imagel"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strict Mode Features"
+            android:textSize="20dp"
+            android:id="@+id/descrip"
+            android:layout_below="@id/strict"
+            android:layout_centerHorizontal="true"
+            android:textColor="#C0C0C0"/>
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_weight="1">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="1. Block App Notification"
+         android:textSize="25dp"
+         android:textColor="@color/colorAccent"
+         android:layout_marginTop="20dp"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:text="You can Block app Notification"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Rights"
+            android:textSize="25dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:text="Allow Device Administrator rights for Neglect"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Changes"
+            android:textSize="25dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:text="Don't Allow change profile setting"/>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
